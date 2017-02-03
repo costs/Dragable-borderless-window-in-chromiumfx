@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+        <title></title>
+        <style>
+
+            .ui-sys-bar {
+	        position: fixed;
+	        width: calc(100% - 40px);
+	        height: 30px;
+	        left: 40px;
+	        top: 0;
+	        display: flex;
+	        align-items: center;
+	        justify-content: flex-end;
+	        z-index: 2;
+	        -webkit-app-region: drag;
+}
+
+            .title-area 
+            {
+               -webkit-app-region: drag;
+            }
+
+        </style>
+	</head>
+<body>
+
+
+    <div id="main">
+        <nav class="ui-sys-bar">
+            <div class="ui-sys-commands">
+                <span class="-nanui-minimize">&#48;</span>
+                <span class="-nanui-maximize">&#49;</span>
+                <span class="-nanui-close">&#114;</span>
+            </div>
+        </nav>
+
+
+        <div class='title-area'>
+            A draggable area
+        </div>
+    </div>
+
+
+
+    <script src="js/init.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+</body>
+
+</html>
